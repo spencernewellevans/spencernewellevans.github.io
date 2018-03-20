@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="description" content="GEO605 Project Homepage">
+  <meta name="keywords" content="Northern Canada, Health, Telemedicine, Native">
+  <meta name="author" content="Spencer Evans">
+  <meta name="viewport" content="width=device-width, initial-scale-1.0">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+  <!HEADER>
+  <div class="header">
+    <h1>GEO605 Course Project</h1>
+  </div>
+
+  <!SIDEBAR>
+  <div class="column side">
+    <button class="homebutton"><a href="index.html">Home</a></button>
+
+    <button class="accordion">Canada's North</button>
+    <div class="panel">
+      <ul>
+        <li><a href="html/north.html#land">The land</a></li>
+        <li><a href="html/north.html#people">The people</a></li>
+      </ul>
+    </div>
+
+    <button class="accordion">Healthcare in Canada's North</button>
+    <div class="panel">
+      <ul>
+        <li><a href="html/current.html#canada">North vs. Canada</a></li>
+        <li><a href="html/current.html#neighbours">Canada vs. its circumpolar neighbours</a></li>
+        <li><a href="html/current.html#issues">Healthcare issues</a></li>
+      </ul>
+    </div>
+
+    <button class="accordion">Telemedicine</button>
+    <div class="panel">
+      <ul>
+        <li><a href="html/telemedicine.html#overview">Overview</a></li>
+        <li><a href="html/telemedicine.html#global">Global implentations</a></li>
+        <li><a href="html/telemedicine.html#canadaian">Canadian implentations</a></li>
+      </ul>
+    </div>
+
+    <button class="accordion">Improving Healthcare in the North</button>
+    <div class="panel">
+      <ul>
+        <li><a href="html/improvements.html#implement">Implementing telemedicine</a></li>
+        <li><a href="html/improvements.html#benfits">Benefits</a></li>
+        <li><a href="html/improvements.html#cost">Cost analysis</a></li>
+        <li><a href="html/improvements.html#infrastructure">Infrastructure</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!ACCORDION SCRIPT>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+  </script>
+
+  <!MAIN CONTENT>
+  <div class="column main">
+    <h2>Introduction</h2>
+    <p>Introduction text goes here.</p>
+
+    <h2>Abstract</h2>
+    <p>Abstract text goes here.</p>
+  </div>
+
+  <!FOOTER>
+  <div class="footer">
+    <h3><a href="html/references.html">References</a></h3>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+/*BASE PAGE STYLE*/
+
+a:link {
+  color: black;
+  background-color: none;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background-color: none;
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+  background-color: none;
+  text-decoration: none;
+}
+
+.header {
+  background-color: grey;
+  text-align:center;
+  padding: 10px
+}
+
+.column {
+  float: left;
+  background-color: white;
+}
+
+.column.side {
+  width: 25%;
+  max-width: 200px;
+}
+
+.column.main {
+  width: 70%;
+  padding-left: 16px;
+}
+
+.row:after {
+  content: ""
+  display: table;
+  clear: both;
+}
+
+.footer {
+  background-color: grey;
+  text-align: center;
+  padding: 6px;
+  float: left;
+  width: 100%;
+}
+
+.homebutton {
+  float: left;
+  clear: left;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.4s;
+  min-height: 50px;
+}
+
+.homebutton a {
+    display: block;
+}
+
+.active, .homebutton:hover {
+  background-color: #ccc
+}
+
+.accordion {
+  float: left;
+  clear: left;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.4s;
+  min-height: 50px;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc
+}
+
+.panel {
+  padding: 0 1px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.panel ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: ;
+}
+
+.panel li {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  padding: 6px;
+  padding-left: 10px;
+}
+
+.panel a {
+  display: block;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+/*INDIVIDUAL PAGE STYLE*/
