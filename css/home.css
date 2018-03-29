@@ -6,6 +6,15 @@
   padding: 10px
 }
 
+.titlepage {
+  text-align: center;
+}
+
+.centre{
+  display: block;
+  margin: auto;
+}
+
 .column {
   float: left;
   background-color: white;
