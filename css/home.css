@@ -1,13 +1,39 @@
 /*BASE PAGE STYLE*/
+p {
+  color: #081f42;
+  font-family: helvetica;
+  text-align: justify;
+}
+
+ul {
+  color: #081f42;
+  font-family: helvetica;
+}
+
+ol {
+  color: #081f42;
+  font-family: helvetica;
+}
+
+h2 {
+  background-color: #e3f2fc;
+  font-family: verdana;
+  padding: 4px;
+  padding-left: 8px;
+}
 
 .header {
-  background-color: grey;
+  background-color: #7ab4db;
   text-align:center;
+  font-family: verdana;
   padding: 10px
 }
 
+
 .titlepage {
   text-align: center;
+  color: #081f42;
+  font-family: helvetica;
 }
 
 .centre{
@@ -61,7 +87,7 @@
 }
 
 .footer {
-  background-color: grey;
+  background-color: #7ab4db;
   text-align: center;
   padding: 6px;
   float: left;
