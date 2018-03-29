@@ -1,5 +1,12 @@
 /*BASE PAGE STYLE*/
+h5 {
+  text-align: center;
+}
 
+.centre{
+  display: block;
+  margin: auto;
+}
 
 .header {
   background-color: grey;
