@@ -126,10 +126,13 @@ author:
       # url: "https://facebook.com/"
     - label: "spencernewellevans"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/spencernewellevans"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/spencer-evans-9a1b0814a/"
 
 # Site Footer
 footer:
