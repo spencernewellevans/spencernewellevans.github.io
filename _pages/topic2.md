@@ -1,6 +1,6 @@
 ---
-title: "Other Topic"
-permalink: /other/
+title: "Topic 2"
+permalink: /topic2/
 header:
   #image: /images/
 ---
