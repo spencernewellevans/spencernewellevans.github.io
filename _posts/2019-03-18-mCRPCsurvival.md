@@ -5,14 +5,48 @@ tags: [machine learning, data science, prostate cancer, R]
 header:
     #image: "images/mcrpc/image.jpg"
 excerpt: "Machine Learning, Data Science, Prostate Cancer"
+gallery:
+  - url: /images/figures/ANALGESICS.png
+    imagepath: /images/figures/ANALGESICS.png
+    alt: "figure"
+    title: "figure"
+  - url: /images/figures/CA.png
+    imagepath: /images/figures/CA.png
+    alt: "figure"
+    title: "figure"
+  - url: /images/figures/COPD.png
+    imagepath: /images/figures/COPD.png
+    alt: "figure"
+    title: "figure"
+  - url: /images/figures/GI.png
+    imagepath: /images/figures/GI.png
+    alt: "figure"
+    title: "figure"
+  - url: /images/figures/GONA.png
+    imagepath: /images/figures/GONA.png
+    alt: "figure"
+    title: "figure"
+  - url: /images/figures/liver.png
+    imagepath: /images/figures/liver.png
+    alt: "figure"
+    title: "figure"
+  - url: /images/figures/lymph.png
+    imagepath: /images/figures/lypmh.png
+    alt: "figure"
+    title: "figure"
 ---
 
 ## Problem definition
 
-Prostate cancer
+Prostate cancer is...
+
 ## Solution overview
 
+Machine learning can be used to determine...
+
 ## LDA background
+
+Linear discriminant analysis (LDA) is...
 
 ## Code snippets
 ```r
@@ -23,6 +57,8 @@ fitC <- train(DEATH~., data = pcdata, trControl = train_control, method = 'lda')
 
 ## Cox PH background
 
+Cox proportional hazards is...
+
 ## Code snippets
 ```r
 survival_obj = Surv(time = pcdata$LKADT_P, event = pcdata$DEATH)
@@ -31,7 +67,6 @@ fit.coxph <- coxph(survival_obj ~ ALP + AST + CA + HB + LDH + PSA + TBILI + PROS
                      LYMPHADENECTOMY + SPINAL_CORD_SURGERY + HEAD_AND_NECK + TURP + GIBLEED + MI + COPD + DVT + MHSOCIAL +
                      MHSURG + MHNEOPLA + MHMUSCLE + MHNERV + Age1 + Age2 + Age3 + Asian + Black + White + OtherRace,
                    data = pcdata)
-ggforest(fit.coxph, data = pcdata)
 ```
 
 ```r
@@ -40,7 +75,7 @@ coxfit <- coxph(Surv(time = train_data$LKADT_P, event = train_data$DEATH) ~
                 data = train_data)
 ```
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/Toronto-Cityscape.jpg" alt="">
+{% include gallery caption="" %}
 
 ## Hazard ratios box plot
 <img src="{{ site.url }}{{ site.baseurl }}/images/Toronto-Cityscape.jpg" alt="">
