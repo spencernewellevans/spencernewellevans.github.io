@@ -15,9 +15,17 @@ excerpt: "Machine Learning, Data Science, Prostate Cancer"
 
 ## Cox PH background
 
+## Code snippets
+```r
+library(survival)
+df <- read_csv('prodata.csv')
+```
+
 #### Hazard ratios box plot
+<img src="{{ site.url }}{{ site.baseurl }}/images/Toronto-Cityscape.jpg" alt="box plot>
 
 #### Survival plots
+<img src="{{ site.url }}{{ site.baseurl }}/images/Toronto-Cityscape.jpg" alt="survival plot">
 
 #### link to app
 #### link to repo
