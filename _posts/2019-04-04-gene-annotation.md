@@ -35,8 +35,59 @@ This structure is often found in prokaryotic DNA preceding the start codon by 7-
 
 An open reading frame (ORF) is the region of DNA that is transcribed between the start and stop codon. A candidate gene must be a reasonable length for it to be considered valid. For this project a minimum ORF leength of 100 base pairs was used.
 
-#### Code snippets
+####  The Program
 
+The following **FindPattern** function searches a string (*search_text*) for a specific pattern (*pattern*). The indices to begin and stop searching can be specified by *start_loc* and *stop_loc* respectively. The *threshold* parameter determines the number of characters in the string that must match *pattern*. Finally, the *increment* parameter declares how many characters are skipped between searches. The funciton returns -1 if no match is found.
+
+```Python
+def FindPattern(pattern, search_text, start_loc, stop_loc, increment, threshold):
+    pattern_len = len(pattern)
+    text_len = len(search_text)
+    for i in range(start_loc, stop_loc + 1, increment):
+        count = 0
+        j = i
+        for k in range(0, pattern_len):
+            if search_text[j] == pattern[k]:
+                count = count + 1
+            j = j + 1
+        if count >= threshold:
+            return i
+    return -1
+```
+
+
+This function can be used to search genetics for specific sequences in genetic data. Here is a snippet from the plasmid sequence of enterococcus bacteria that will be used as an example.
+
+```
+...TTCAAGACAATTTCAGCAGTTGAACGAGATCGGAATGGATATTATATATGAAGAGAAAGTTTCAGGA
+GCAACAAAGGATCGCGAGCAACTTCAAAAAGTGTTAGACGATTTACAGGAAGATGACATCATTTATGTTA
+CAGACTTAACTCGAATCACTCGTAGTACACAAGATCTATTTGAATTAATCGATAACATACGAGATAA...
+```
+
+The **FindPattern** function can be used to find all of the gene markers described above. The first step is to find a start codon in the sequence.
+
+```Python
+i = 0
+while i < len1 - 102:
+    atg = FindPattern('ATG', seq, i, len1 - 103, 1, 3)
+    if atg == -1:
+        break
+    i = atg + 3
+```
+
+This code searches for the "ATG" pattern in the sequence (*seq*), starting at 1 and iterating through the whole sequence. The sequence stops 103 base pairs before the end of the sequence for efficiency because any start codon past that point will result in an ORF shorter than 100 base pairs. If no start codon is found in the sequence the loop breaks and the program terminates. Otherwise, the start location is avanced by three and the program proceeds to the next step: finding a stop codon.
+
+```Python
+
+```
+
+```Python
+
+```
+
+```Python
+
+```
 #### Output sample
 
 The full source code can be found [here](https://github.com/spencernewellevans/gene-locator)
