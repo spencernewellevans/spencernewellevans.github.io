@@ -7,19 +7,24 @@ header:
 excerpt: "Bioinformatics, Python"
 ---
 
+# Genetics Image here
+
 ## Problem definition
 
 ## Solution overview
 
 ## Gene marker background
+
 #### Start codon
+
 #### Stop codons
+
 #### Shine-dalgarno
+
 #### ORFs
 
 #### Code snippets
-##link to full repo
+
+## link to full repo
 
 #### Output sample
-
-Project Description.
