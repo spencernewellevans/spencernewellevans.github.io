@@ -20,12 +20,10 @@ excerpt: "Machine Learning, Data Science, Prostate Cancer"
 library(survival)
 df <- read_csv('prodata.csv')
 ```
-
 #### Hazard ratios box plot
-<img src="{{ site.url }}{{ site.baseurl }}/images/headshot_cropped.jpg" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/Toronto-Cityscape.jpg" alt="">
 
 #### Survival plots
-![alt]({{ site.url }}{{ site.baseurl }}/images/headshot_cropped.jpg")
 
 #### link to app
 #### link to repo
