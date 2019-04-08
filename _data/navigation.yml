@@ -4,6 +4,8 @@ main:
     url: /about/
   - title: "My projects"
     url: /index.html
+  - title: "projectstest"
+    url: /projects.md/
   # - title: "Survival Analysis"
   #   url: /surv/
   # - title: "Gene Annotation"
