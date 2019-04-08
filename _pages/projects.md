@@ -1,5 +1,5 @@
 ---
-title: "Projects Test"
+title: "My Projects (Test)"
 layout: archive
 permalink: /projects/
 header:
