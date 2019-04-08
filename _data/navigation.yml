@@ -2,7 +2,7 @@
 main:
   - title: "About me"
     url: /about/
-  - title: "Projects"
+  - title: "My projects"
     url: /index.html
   # - title: "Survival Analysis"
   #   url: /surv/
