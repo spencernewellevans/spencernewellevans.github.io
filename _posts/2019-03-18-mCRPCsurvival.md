@@ -68,14 +68,30 @@ fit.coxph <- coxph(survival_obj ~ ALP + AST + CA + HB + LDH + PSA + TBILI + PROS
                      MHSURG + MHNEOPLA + MHMUSCLE + MHNERV + Age1 + Age2 + Age3 + Asian + Black + White + OtherRace,
                    data = pcdata)
 ```
+### TABLE WITH TOP HAZARD RATIOS
+| Variable    | Hazard ratio   |
+| :------------- | :---------- |
+| LIVER          | 0.59        |
+| GIBLEED        | 0.50        |
+| PLEURA         | 0.49        |
+| COPD           | 0.44        |
+| MI             | 0.41        |
+| ANALGESICS     | 0.37        |
+| TURP           | 0.36        |
+| GONADOTROPIN   | 0.27        |
+| LYMPH_NODES    | 0.21        |
+| CA             | 0.20        |
+
+### KAPLAN MEIER PLOTS
+<!-- {% include gallery caption="" %} -->
+
+
 
 ```r
 coxfit <- coxph(Surv(time = train_data$LKADT_P, event = train_data$DEATH) ~
                   LIVER + ANALGESICS + PLEURA + MI + GONADOTROPIN,
                 data = train_data)
 ```
-
-{% include gallery caption="" %}
 
 ## Hazard ratios box plot
 <img src="{{ site.url }}{{ site.baseurl }}/images/Toronto-Cityscape.jpg" alt="">
