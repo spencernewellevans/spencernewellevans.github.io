@@ -22,10 +22,10 @@ df <- read_csv('prodata.csv')
 ```
 
 #### Hazard ratios box plot
-<img src="{{ site.url }}{{ site.baseurl }}/images/Toronto-Cityscape.jpg" alt="box plot>
+![alt](){{ site.url }}{{ site.baseurl }}/images/Toronto-Cityscape.jpg")
 
 #### Survival plots
-<img src="{{ site.url }}{{ site.baseurl }}/images/Toronto-Cityscape.jpg" alt="survival plot">
+![alt](){{ site.url }}{{ site.baseurl }}/images/Toronto-Cityscape.jpg")
 
 #### link to app
 #### link to repo
