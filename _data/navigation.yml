@@ -4,10 +4,10 @@ main:
     url: /about/
   # - title: "Projects"
   #   url: /projects/
-  - title: "Survival Analysis"
-    url: /surv/
-  - title: "Gene Annotation"
-    url: /gene/
+  # - title: "Survival Analysis"
+  #   url: /surv/
+  # - title: "Gene Annotation"
+  #   url: /gene/
 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
