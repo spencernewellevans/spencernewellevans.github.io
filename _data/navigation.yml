@@ -2,8 +2,8 @@
 main:
   - title: "About me"
     url: /about/
-  # - title: "Projects"
-  #   url: /projects/
+  - title: "Projects"
+    url: /index.html
   # - title: "Survival Analysis"
   #   url: /surv/
   # - title: "Gene Annotation"

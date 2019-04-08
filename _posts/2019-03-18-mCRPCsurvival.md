@@ -10,13 +10,13 @@ header:
 
 Prostate cancer is one of the significant clinical challenge that affects a large amount of men around the world. Machine learning can be used to aqcuire new insights on the relationships between certain clinical variables and death in prostate cancer patients.
 
-The dataset used for this project is acquired from the Prostate Cancer Dream Project at https://www.synapse.org/. The data is taken from 4 clinical studies examining approximately 1600 patients with over 140 clinical variables.
+The dataset used for this project was acquired from the Prostate Cancer Dream Project at https://www.synapse.org/. The data was taken from 4 clinical studies examining approximately 1600 patients with over 140 clinical variables.
 
 ## Linear Discriminant Analysis
 
-Linear discriminant analysis (LDA) is used to create a binary classifier to predict the occurence of death on new data. Before developing the model the dataset is reduced to only contain variable will a low percentage of missing data and large relationship to the occurence of death.
+Linear discriminant analysis (LDA) was used to create a binary classifier to predict the occurence of death on new data. Before developing the model the dataset was reduced to only contain variable will a low percentage of missing data and large relationship to the occurence of death. The dataset was reduced to only 38 variable including factors such as age, weight, and medical history.
 
-The "Caret" package is a useful machine learning library in R. The following
+The "Caret" package is a useful machine learning library in R. The following R code was used to train the LDA model. The approximate out-of-sample accuracy for this model was determine with 10-fold cross validation.
 
 ```r
 library(caret)
