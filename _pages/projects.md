@@ -1,6 +1,6 @@
 ---
 title: "My Projects (Test)"
-layout: archive
+layout: collection
 permalink: /projects/
 header:
   #image: /images/
