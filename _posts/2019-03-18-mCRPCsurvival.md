@@ -69,13 +69,18 @@ fit.coxph <- coxph(survival_obj ~ ALP + AST + CA + HB + LDH + PSA + TBILI + PROS
                    data = pcdata)
 ```
 
+### TABLE WITH TOP HAZARD RATIOS
+
+### KAPLAN MEIER plots
+
+
+
 ```r
 coxfit <- coxph(Surv(time = train_data$LKADT_P, event = train_data$DEATH) ~
                   LIVER + ANALGESICS + PLEURA + MI + GONADOTROPIN,
                 data = train_data)
 ```
-
-{% include gallery caption="" %}
+<img src="{{ site.url }}{{ site.baseurl }}/images/survplots.png" alt="">
 
 ## Hazard ratios box plot
 <img src="{{ site.url }}{{ site.baseurl }}/images/Toronto-Cityscape.jpg" alt="">
