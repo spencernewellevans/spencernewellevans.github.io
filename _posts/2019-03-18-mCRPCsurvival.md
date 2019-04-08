@@ -44,22 +44,24 @@ Prostate cancer is...
 
 Machine learning can be used to determine...
 
-## LDA background
+## Linear Discriminant Analysis
 
 Linear discriminant analysis (LDA) is...
 
-## Code snippets
+The caret 
+
 ```r
 pcdata$DEATH <- as.factor(pcdata$DEATH)
 train_control = trainControl(method = 'cv', number = 10)
 fitC <- train(DEATH~., data = pcdata, trControl = train_control, method = 'lda')
 ```
 
-## Cox PH background
+## Cox Proportional Hazards
 
-Cox proportional hazards is...
+Cox proportional hazards is a method of logistic regression that is commonly used in survival analysis. In order to produce an accurate estimate of the time to death measurement the most significant variables needed to be selected.
 
-## Code snippets
+The Cox proportional hazards model generates an estimate of the effect that each variable has on the probability of survival. The following R code uses the coxph function from the "survival" library to determined  the risk associated with each variable in our dataset:
+
 ```r
 survival_obj = Surv(time = pcdata$LKADT_P, event = pcdata$DEATH)
 fit.coxph <- coxph(survival_obj ~ ALP + AST + CA + HB + LDH + PSA + TBILI + PROSTATE + LYMPH_NODES + LIVER +
@@ -68,18 +70,7 @@ fit.coxph <- coxph(survival_obj ~ ALP + AST + CA + HB + LDH + PSA + TBILI + PROS
                      MHSURG + MHNEOPLA + MHMUSCLE + MHNERV + Age1 + Age2 + Age3 + Asian + Black + White + OtherRace,
                    data = pcdata)
 ```
-### TABLE WITH TOP HAZARD RATIOS
-| Variable       | Hazard ratio   |
-| :------------- | :------------- |
-| LIVER          | 0.59           |
-| GIBLEED        | 0.50           |
-| PLEURA         | 0.49           |
-| COPD           | 0.44           |
-| MI             | 0.41           |
-| ANALGESICS     | 0.37           |
-| TURP           | 0.36           |
-| GONADOTROPIN   | 0.27           |
-| LYMPH_NODES    | 0.21           |
+The variables with the largest hazard ratios are included in the table below.
 
 <table>
   <caption>Top hazard ratios</caption>
