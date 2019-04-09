@@ -2,7 +2,7 @@
 title: "About Me"
 permalink: /about/
 header:
-  #image: /images/
+  image: "/images/george-vari-building.jpg"
 ---
 
 My name is Spencer Evans.
