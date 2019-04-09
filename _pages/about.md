@@ -2,14 +2,16 @@
 title: "About Me"
 permalink: /about/
 header:
-  image: "/images/george-vari-building.jpg"
+  #image: "/images/george-vari-building.jpg"
 ---
 
 My name is Spencer Evans.
 
 I am a recent graduate of Ryerson Unversity with a bachelor's degree in biomedical engineering.
+![Ryerson Engineering Building](/images/george-vari-building.jpg)
 
 I have a keen interest in machine learning and data science, specifically with their applications in medical technology.
+![Medical Data Science](/media/spencer/Windows/Users/spenc/OneDrive/Desktop/BME802/project/medical-data-analysis.jfif)
 
 ### Skills
 
