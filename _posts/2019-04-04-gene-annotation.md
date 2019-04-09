@@ -19,23 +19,23 @@ There are several genetic markers that are useful in automated gene annotation. 
 
 ![gene-annotation](/images/ORF.jpg)
 
-#### Start codon
+### Start codon
 
 The start codon is defined by the "ATG" sequence in genomic data. This sequence acts as a marker that starts the transcription of DNA.
 
-#### Stop codons
+### Stop codons
 
 Stop codon can occur as "TAG", "TGA" and "TAA" sequences. This codon signifies the end of transcription.
 
-#### Shine-Dalgarno Sequence
+### Shine-Dalgarno Sequence
 
 This structure is often found in prokaryotic DNA preceding the start codon by 3-7 base pairs. This structure is characterized by the "AGGAGG" sequence. This sequence can vary slightly across genes so for this program only 5 base pairs are required to match the "AGGAGG" sequence.
 
-#### Opening reading frame length
+### Opening reading frame length
 
 An open reading frame (ORF) is the region of DNA that is transcribed between the start and stop codon. A candidate gene must be a reasonable length for it to be considered valid. For this project a minimum ORF leength of 100 base pairs was used.
 
-####  The Program
+##  The Program
 
 The following **FindPattern** function searches a string (*search_text*) for a specific pattern (*pattern*). The indices to begin and stop searching can be specified by *start_loc* and *stop_loc* respectively. The *threshold* parameter determines the number of characters in the string that must match *pattern*. Finally, the *increment* parameter declares how many characters are skipped between searches. The funciton returns -1 if no match is found.
 
@@ -103,12 +103,23 @@ ORFlen = firststop - atg
         continue
 ```
 
-Finally the program searches for the shine-dalgarno seqeunce. The threshold for this search is given as 5 to allows one irreuglar character in the sequence. If no shine-dalgarno sequence is found the
+Finally the program searches for the shine-dalgarno seqeunce. The threshold for this search is given as 5 to allows one irreuglar character in the sequence. If no shine-dalgarno sequence is found the loop continues and searches for a new start codon.
+
 ```python
 aggagg = FindPattern('AGGAGG', seq, atg - 13, atg - 9, 1, 5)
     if aggagg == -1:
         continue
 ```
-#### Output sample
+
+Running this program on the sample data finds 7 valid open reading frames.
+```
+ORF  0 ATG =  3747  STOP =  4776 LENGTH =  1029
+ORF  1 ATG =  5820  STOP =  6363 LENGTH =  543
+ORF  2 ATG =  7962  STOP =  8697 LENGTH =  735
+ORF  3 ATG =  12934  STOP =  13177 LENGTH =  243
+ORF  4 ATG =  13282  STOP =  14149 LENGTH =  867
+ORF  5 ATG =  14132  STOP =  14864 LENGTH =  732
+ORF  6 ATG =  14899  STOP =  15805 LENGTH =  906
+```
 
 The full source code can be found [here](https://github.com/spencernewellevans/gene-locator)
